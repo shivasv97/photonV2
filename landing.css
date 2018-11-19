@@ -77,17 +77,11 @@ h1 {
 	z-index: 50;
 	font-size: 50px;
 }
-h2 {
-	position: absolute;
-	top: 70px;
-	left: 10px;
-	z-index: 50;
-	font-size: 20px;
-}
-h2 span {
+
+ span {
 	font-size: 10px;
 }
-h1, h2 {
+h1 {
 	color: #fff;
 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }
@@ -131,10 +125,7 @@ audio {
 	h1 {
 		font-size: 25px;
 	}
-	h2 {
-		font-size: 12px;
-		top: 50px;
-	}
+	
 	audio {
 		opacity: 1;
 		bottom: 30px;
@@ -151,6 +142,7 @@ audio {
 .navsilo{
 
 	font-family: 'Comfortaa', cursive;
+	
 }
 .px-2 {
 	padding-left: ($spacer * .5) !important;
@@ -168,13 +160,54 @@ audio {
 	position: relative;
 	font-family: 'Pacifico', cursive;
 	padding-top: 6rem;
-	padding-bottom: 8rem;
+	/* padding-bottom: 1rem; */
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	min-height: 31rem;
+	min-height: 3rem;
 	display: table;
 	height: auto;
+}
+
+.nav-brand{
+	font-family: 'Pacifico', cursive;
+}
+
+.nav-buttons{
+	border: 1px solid #3a3a3a;
+	border-radius: 3px;
+	width: 100px;
+	height: 30px;
+	display: block;
+  
+	background: linear-gradient(to right, rgb(160, 160, 160)50%, #444445 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .5s ease-out;
+  }
+  .nav-buttons:hover {
+	background-position: left bottom;
+  }
+  .nav-buttons-text {
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px; 
+	color: rgb(160, 160, 160);
+	transition: all .6s ease-out;
+	display: block;
+  }
+  
+  .nav-buttons-text:hover {
+	color: white;  
+  }
+
+.secText{
+	position: relative;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	padding-top: 9rem;
+	width: 100%;
 }
 
 .bodyDiv{
@@ -247,3 +280,33 @@ audio {
 	}
 	
 }
+
+.masthead {
+	min-height: 30rem;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: auto;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background: -webkit-linear-gradient(top, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+	background: linear-gradient(top, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+  .masthead h1 {
+	font-size: 4rem;
+	margin: 0;
+	padding: 0;
+  }
+  
+  @media (min-width: 992px) {
+	.masthead {
+	  height: 100vh;
+	}
+	.masthead h1 {
+	  font-size: 5.5rem;
+	}
+  }
